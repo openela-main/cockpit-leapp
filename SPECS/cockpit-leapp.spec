@@ -1,6 +1,6 @@
 Name:           cockpit-leapp
-Version:        0.1.6
-Release:        5%{?dist}
+Version:        0.1.7
+Release:        1%{?dist}
 Summary:        Leapp in-place upgrade Cockpit UI
 
 License:        LGPLv2+
@@ -40,6 +40,13 @@ touch %{_localstatedir}/log/leapp/remediations
 
 
 %changelog
+* Tue Sep 10 2024 Bob Mader <bob@redhat.com> - 0.1.7-1
+- Update to 0.1.7
+- Make report UI compatible with report-schema 1.2.0
+  Resolves: RHEL-55438
+- Fix remediation plan back button behavior
+  Resolves: RHEL-30012
+
 * Thu Mar 20 2022 Petr Stodulka <pstodulk@redhat.com> - 0.1.6-5
 - Rebuild
 - Resolves: #2037743
